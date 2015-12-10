@@ -1,4 +1,6 @@
-vendor
-wp-content
-!/wp
-/wp/*
+*.swp
+vendor/
+!wp-content/themes/tycc
+wp-content/**
+wp-content/themes/*
+wp/*
