@@ -1,0 +1,36 @@
+{
+    "name": "sallop/composer_wordpress",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "johnpbloch/wordpress": "^4.2",
+        "fancyguy/wordpress-monolog": "dev-master",
+        "wpackagist-plugin/advanced-custom-fields": "*",
+        "wpackagist-plugin/posts-to-posts": "1.4.x",
+        "wpackagist-plugin/debug-bar": "0.8.2",
+        "wpackagist-theme/blankslate": "4.0.2"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.1",
+        "monolog/monolog": "^1.17"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "wp-content/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "sallop",
+            "email": "shiogai1987@yahoo.co.jp"
+        }
+    ]
+}
